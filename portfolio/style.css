@@ -1,0 +1,22 @@
+/* Smooth Scrolling for the whole html */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom visual polish */
+.step-primary+.step-primary:before,
+.step-primary:after {
+    background-color: hsl(var(--p));
+    /* DaisyUI Primary Color */
+}
+
+/* Map placeholder styling */
+iframe {
+    filter: grayscale(100%);
+    /* Keeps the map looking modern/subtle */
+    transition: filter 0.3s;
+}
+
+iframe:hover {
+    filter: none;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | [Your Name]</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-base-200 font-sans">
+    <div class="navbar bg-base-100 shadow-lg">
+      <a href="index.html" class="btn btn-ghost normal-case text-xl"
+        >DEV.PORTFOLIO</a
+      >
+      <a href="index.html" class="ml-auto btn btn-sm">Back Home</a>
+    </div>
+
+    <header class="bg-secondary text-white py-16 text-center">
+      <h1 class="text-5xl font-bold">My Resume</h1>
+      <p class="mt-4 text-xl">Education, Experience & Qualifications</p>
+    </header>
+
+    <div class="container mx-auto py-10 px-5 grid md:grid-cols-3 gap-8">
+      <aside class="md:col-span-1 space-y-6">
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h2 class="card-title text-primary border-b pb-2">Personal Info</h2>
+            <ul class="space-y-3 mt-4 text-sm">
+              <li><strong>Name:</strong> John Doe</li>
+              <li><strong>Birth Date:</strong> Jan 01, 1990</li>
+              <li><strong>Nationality:</strong> USA</li>
+              <li><strong>Freelance:</strong> Available</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h2 class="card-title text-primary border-b pb-2">
+              Special Skills
+            </h2>
+            <ul
+              class="list-disc list-inside space-y-2 mt-4 text-sm text-gray-600"
+            >
+              <li>Agile Methodology</li>
+              <li>Server Deployment (AWS)</li>
+              <li>Database Architecture</li>
+              <li>API Integration</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <main class="md:col-span-2 space-y-8">
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-primary">#</span> Working Experience
+          </h2>
+          <ul class="steps steps-vertical w-full">
+            <li class="step step-primary" data-content="✓">
+              <div class="text-left ml-4 mb-6">
+                <h3 class="font-bold text-xl">Senior Web Developer</h3>
+                <span class="text-sm text-gray-500"
+                  >Tech Solutions Inc. | 2020 - Present</span
+                >
+                <p class="mt-2 text-gray-600">
+                  Leading the frontend team, refactoring legacy code, and
+                  implementing CI/CD pipelines.
+                </p>
+              </div>
+            </li>
+            <li class="step step-primary" data-content="✓">
+              <div class="text-left ml-4">
+                <h3 class="font-bold text-xl">Junior Developer</h3>
+                <span class="text-sm text-gray-500"
+                  >Creative Agency | 2018 - 2020</span
+                >
+                <p class="mt-2 text-gray-600">
+                  Developed responsive websites for 20+ clients and maintained
+                  internal tools.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-primary">#</span> Education
+          </h2>
+          <div class="collapse collapse-plus bg-base-100 mb-2 shadow-md">
+            <input type="radio" name="edu-accordion" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              BSc in Computer Science
+            </div>
+            <div class="collapse-content">
+              <p>University of Technology | 2014 - 2018</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-primary">#</span> Training
+          </h2>
+          <div class="overflow-x-auto bg-base-100 shadow-xl rounded-lg">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Certification</th>
+                  <th>Institute</th>
+                  <th>Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Full Stack Bootcamp</td>
+                  <td>Udemy</td>
+                  <td>2019</td>
+                </tr>
+                <tr>
+                  <td>AWS Solutions Architect</td>
+                  <td>Amazon</td>
+                  <td>2021</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
