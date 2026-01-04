@@ -1,65 +1,117 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | [Your Name]</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="font-sans">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar bg-base-100 shadow-lg">
+      <div class="navbar-start">
+        <a class="btn btn-ghost normal-case text-xl" href="index.html"
+          >MyPortfolio</a
+        >
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="service.html" class="active">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
 
-    <div class="navbar bg-base-100 shadow-lg"><a href="index.html" class="btn btn-ghost normal-case text-xl">DEV.PORTFOLIO</a> <a href="index.html" class="ml-auto btn btn-sm">Back Home</a></div>
+    <div class="hero bg-base-200 py-10">
+      <div class="hero-content text-center">
+        <h1 class="text-5xl font-bold">Our Services</h1>
+      </div>
+    </div>
 
-    <header class="bg-accent text-white py-16 text-center">
-        <h1 class="text-5xl font-bold">What I Do</h1>
-        <p class="mt-4 text-xl">Tailored solutions for your business needs.</p>
-    </header>
-
-    <section class="py-20 px-5 bg-base-200">
-        <div class="container mx-auto grid md:grid-cols-3 gap-8">
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10 text-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title">Web Development</h2>
-                    <p>Building fast, responsive, and secure websites.</p>
-                    <div class="card-actions"><button class="btn btn-primary btn-sm">Details</button></div>
-                </div>
-            </div>
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10 text-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title">Graphic Design</h2>
-                    <p>Logos, branding, and visual identity.</p>
-                    <div class="card-actions"><button class="btn btn-primary btn-sm">Details</button></div>
-                </div>
-            </div>
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10 text-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title">App Development</h2>
-                    <p>Mobile applications for iOS and Android.</p>
-                    <div class="card-actions"><button class="btn btn-primary btn-sm">Details</button></div>
-                </div>
-            </div>
+    <section class="container mx-auto p-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card bg-base-100 shadow-xl border-t-4 border-primary">
+          <div class="card-body">
+            <h2 class="card-title">Web Development</h2>
+            <p>Custom websites built from scratch.</p>
+          </div>
         </div>
+        <div class="card bg-base-100 shadow-xl border-t-4 border-secondary">
+          <div class="card-body">
+            <h2 class="card-title">UI/UX Design</h2>
+            <p>Designing user-centric interfaces.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border-t-4 border-accent">
+          <div class="card-body">
+            <h2 class="card-title">Digital Marketing</h2>
+            <p>Growing your brand online.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="py-16 bg-white text-center">
-        <h3 class="text-2xl font-bold mb-5">Happy Clients</h3>
-        <p class="mb-10 text-gray-500">I've worked with over 50+ Global Clients.</p>
-        <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 px-10">
-            <div class="p-4 border rounded hover:shadow-lg transition">Client A</div>
-            <div class="p-4 border rounded hover:shadow-lg transition">Client B</div>
-            <div class="p-4 border rounded hover:shadow-lg transition">Client C</div>
-            <div class="p-4 border rounded hover:shadow-lg transition">Client D</div>
+    <section class="container mx-auto p-10 max-w-3xl">
+      <h2 class="text-3xl font-bold text-center mb-8">FAQ</h2>
+
+      <div class="collapse collapse-arrow bg-base-200 mb-2">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          How much does a website cost?
         </div>
+        <div class="collapse-content">
+          <p>It depends on the complexity, starting from $500.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 mb-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How long does it take?
+        </div>
+        <div class="collapse-content">
+          <p>Typically 2-4 weeks for a standard portfolio.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 mb-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Do you provide hosting?
+        </div>
+        <div class="collapse-content">
+          <p>Yes, we can assist with hosting setup.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 mb-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Is SEO included?</div>
+        <div class="collapse-content">
+          <p>Basic technical SEO is included in all packages.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 mb-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Do you offer support?
+        </div>
+        <div class="collapse-content">
+          <p>Yes, we offer 3 months of free support.</p>
+        </div>
+      </div>
     </section>
-</body>
+
+    <footer class="footer footer-center p-10 bg-primary text-primary-content">
+      <div>
+        <p>Copyright © 2026</p>
+        <p>Current Time: <span id="live-datetime">Loading...</span></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

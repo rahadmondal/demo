@@ -1,80 +1,115 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | [Your Name]</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="font-sans">
-    
-    <div class="navbar bg-base-100 shadow-lg"><a href="index.html" class="btn btn-ghost normal-case text-xl">DEV.PORTFOLIO</a> <a href="index.html" class="ml-auto btn btn-sm">Back Home</a></div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar bg-base-100 shadow-lg">
+      <div class="navbar-start">
+        <a class="btn btn-ghost normal-case text-xl" href="index.html"
+          >MyPortfolio</a
+        >
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
 
-    <header class="bg-primary text-white py-16 text-center">
-        <h1 class="text-5xl font-bold">About Me</h1>
-        <p class="mt-4 text-xl">Get to know the person behind the code.</p>
-    </header>
-
-    <section class="py-16 container mx-auto px-5">
-        <div class="flex flex-col md:flex-row gap-10 items-center">
-            <div class="w-full md:w-1/3">
-                <img src="https://placehold.co/400x500" class="rounded-lg shadow-2xl w-full" alt="My Photo">
-            </div>
-            <div class="w-full md:w-2/3">
-                <h2 class="text-3xl font-bold mb-5">Who I Am</h2>
-                <p class="mb-4 text-gray-600 leading-relaxed">
-                    I am a passionate web developer with over 5 years of experience in creating digital solutions. My journey began with simple HTML pages and has evolved into building complex, scalable web applications using modern frameworks.
-                </p>
-                <p class="mb-4 text-gray-600 leading-relaxed">
-                    I believe in clean code, user-centric design, and continuous learning. When I'm not coding, you can find me hiking or exploring new tech trends.
-                </p>
-            </div>
+    <div class="hero bg-base-200 py-10">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">About Me</h1>
         </div>
+      </div>
+    </div>
+
+    <section class="container mx-auto px-4 py-10">
+      <div class="card lg:card-side bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+            alt="Album"
+            class="w-96"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">My Journey</h2>
+          <p>
+            I started coding 5 years ago. I have worked with various startups
+            and large corporations to help them achieve their digital presence.
+            My passion lies in creating clean, efficient, and accessible code.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class="py-16 bg-base-200 px-5">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-10">Technical & Soft Skills</h2>
-            <div class="grid md:grid-cols-2 gap-10">
-                <div class="bg-white p-8 rounded-xl shadow-lg">
-                    <h3 class="text-xl font-bold mb-6 text-primary">Technical Skills</h3>
-                    <div class="mb-4">
-                        <div class="flex justify-between mb-1"><span>HTML/CSS</span><span>95%</span></div>
-                        <progress class="progress progress-primary w-full" value="95" max="100"></progress>
-                    </div>
-                    <div class="mb-4">
-                        <div class="flex justify-between mb-1"><span>JavaScript</span><span>85%</span></div>
-                        <progress class="progress progress-primary w-full" value="85" max="100"></progress>
-                    </div>
-                    <div class="mb-4">
-                        <div class="flex justify-between mb-1"><span>React/Vue</span><span>80%</span></div>
-                        <progress class="progress progress-primary w-full" value="80" max="100"></progress>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg">
-                    <h3 class="text-xl font-bold mb-6 text-secondary">Soft Skills</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="badge badge-lg badge-outline p-4">Problem Solving</span>
-                        <span class="badge badge-lg badge-outline p-4">Communication</span>
-                        <span class="badge badge-lg badge-outline p-4">Time Management</span>
-                        <span class="badge badge-lg badge-outline p-4">Team Leadership</span>
-                        <span class="badge badge-lg badge-outline p-4">Adaptability</span>
-                    </div>
-                </div>
-            </div>
+    <section class="bg-base-200 py-10">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Trusted By</h2>
+        <div class="flex justify-center gap-10 opacity-70 grayscale">
+          <span class="text-2xl font-black">GOOGLE</span>
+          <span class="text-2xl font-black">MICROSOFT</span>
+          <span class="text-2xl font-black">AMAZON</span>
         </div>
+      </div>
     </section>
 
-    <section class="py-16 container mx-auto px-5 text-center">
-        <h2 class="text-3xl font-bold mb-10">Trusted By</h2>
-        <div class="flex flex-wrap justify-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            <img src="https://placehold.co/150x50?text=Client+1" alt="Client 1">
-            <img src="https://placehold.co/150x50?text=Client+2" alt="Client 2">
-            <img src="https://placehold.co/150x50?text=Client+3" alt="Client 3">
-            <img src="https://placehold.co/150x50?text=Client+4" alt="Client 4">
+    <section class="container mx-auto px-4 py-10">
+      <h2 class="text-3xl font-bold mb-6">Technical Skills</h2>
+      <div class="w-full max-w-lg mx-auto">
+        <div class="mb-4">
+          <div class="flex justify-between">
+            <span>HTML/CSS</span><span>90%</span>
+          </div>
+          <progress
+            class="progress progress-primary w-full"
+            value="90"
+            max="100"
+          ></progress>
         </div>
+        <div class="mb-4">
+          <div class="flex justify-between">
+            <span>JavaScript</span><span>80%</span>
+          </div>
+          <progress
+            class="progress progress-secondary w-full"
+            value="80"
+            max="100"
+          ></progress>
+        </div>
+        <div class="mb-4">
+          <div class="flex justify-between">
+            <span>Tailwind CSS</span><span>85%</span>
+          </div>
+          <progress
+            class="progress progress-accent w-full"
+            value="85"
+            max="100"
+          ></progress>
+        </div>
+      </div>
     </section>
 
-</body>
+    <footer class="footer footer-center p-10 bg-primary text-primary-content">
+      <div>
+        <p>Copyright © 2026</p>
+        <p>Current Time: <span id="live-datetime">Loading...</span></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

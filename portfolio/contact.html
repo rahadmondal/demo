@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | [Your Name]</title>
+    <title>Contact Us</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css"
       rel="stylesheet"
@@ -11,117 +11,108 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="font-sans bg-base-200">
+  <body>
     <div class="navbar bg-base-100 shadow-lg">
-      <a href="index.html" class="btn btn-ghost normal-case text-xl"
-        >DEV.PORTFOLIO</a
-      >
-      <a href="index.html" class="ml-auto btn btn-sm">Back Home</a>
+      <div class="navbar-start">
+        <a class="btn btn-ghost normal-case text-xl" href="index.html"
+          >MyPortfolio</a
+        >
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
     </div>
 
-    <header class="bg-neutral text-neutral-content py-16 text-center">
-      <h1 class="text-5xl font-bold">Contact Me</h1>
-      <p class="mt-4 text-xl">Let's discuss your next project.</p>
-    </header>
+    <div class="hero bg-base-200 py-10">
+      <div class="hero-content text-center">
+        <h1 class="text-5xl font-bold">Contact Me</h1>
+      </div>
+    </div>
 
-    <div class="container mx-auto py-16 px-5 grid md:grid-cols-2 gap-10">
-      <div class="space-y-6">
-        <h2 class="text-3xl font-bold mb-5">Get In Touch</h2>
-        <div class="card bg-base-100 shadow-md">
-          <div class="card-body flex-row items-center gap-4">
-            <div class="btn btn-circle btn-primary btn-outline">✉️</div>
-            <div>
-              <h3 class="font-bold">Email</h3>
-              <p>hello@yourdomain.com</p>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-base-100 shadow-md">
-          <div class="card-body flex-row items-center gap-4">
-            <div class="btn btn-circle btn-primary btn-outline">📞</div>
-            <div>
-              <h3 class="font-bold">Phone</h3>
-              <p>+1 (555) 123-4567</p>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-base-100 shadow-md">
-          <div class="card-body flex-row items-center gap-4">
-            <div class="btn btn-circle btn-primary btn-outline">📍</div>
-            <div>
-              <h3 class="font-bold">Address</h3>
-              <p>123 Web Dev Lane, Tech City, USA</p>
-            </div>
-          </div>
-        </div>
+    <section class="container mx-auto p-10 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl font-bold mb-5">Get in Touch</h2>
+        <p class="mb-4">Feel free to reach out for any project inquiries.</p>
+        <ul class="space-y-2">
+          <li><strong>Email:</strong> me@example.com</li>
+          <li><strong>Phone:</strong> +123 456 7890</li>
+          <li><strong>Address:</strong> 123 Web Dev Lane, Internet City</li>
+        </ul>
       </div>
 
-      <div class="card bg-base-100 shadow-xl">
+      <div class="card bg-base-100 shadow-2xl">
         <div class="card-body">
-          <h2 class="card-title mb-4">Send a Message</h2>
-          <form id="contactForm" novalidate>
-            <div class="form-control w-full mb-3">
+          <form id="contactForm">
+            <div class="form-control">
               <label class="label"><span class="label-text">Name</span></label>
               <input
                 type="text"
                 id="name"
                 placeholder="Your Name"
-                class="input input-bordered w-full"
-                required
+                class="input input-bordered"
               />
-              <span class="text-error text-xs mt-1 hidden" id="nameError"
-                >Name is required</span
-              >
             </div>
-            <div class="form-control w-full mb-3">
+            <div class="form-control">
               <label class="label"><span class="label-text">Email</span></label>
               <input
                 type="email"
                 id="email"
                 placeholder="email@example.com"
-                class="input input-bordered w-full"
-                required
+                class="input input-bordered"
               />
-              <span class="text-error text-xs mt-1 hidden" id="emailError"
-                >Please enter a valid email</span
-              >
             </div>
-            <div class="form-control w-full mb-3">
+            <div class="form-control">
+              <label class="label"><span class="label-text">Phone</span></label>
+              <input
+                type="text"
+                id="phone"
+                placeholder="123-456-7890"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="form-control">
               <label class="label"
                 ><span class="label-text">Message</span></label
               >
               <textarea
                 id="message"
                 class="textarea textarea-bordered h-24"
-                placeholder="How can I help you?"
-                required
+                placeholder="Your message..."
               ></textarea>
-              <span class="text-error text-xs mt-1 hidden" id="msgError"
-                >Message cannot be empty</span
-              >
             </div>
-            <div class="card-actions justify-end">
-              <button type="submit" class="btn btn-primary w-full">
+            <div class="form-control mt-6">
+              <button type="submit" class="btn btn-primary">
                 Send Message
               </button>
             </div>
           </form>
         </div>
       </div>
-    </div>
-
-    <section class="w-full h-80 bg-gray-300">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153168!3d-37.8173274420211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d6a32f7f1f84!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1633321589123!5m2!1sen!2sau"
-        width="100%"
-        height="100%"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      >
-      </iframe>
     </section>
 
+    <section class="container mx-auto px-4 pb-10">
+      <h2 class="text-2xl font-bold mb-4">Location</h2>
+      <div class="map-container shadow-lg rounded-lg">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153169!3d-37.81720997975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d6a32f6b1e0!2sFlinders%20St%20Station!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer footer-center p-10 bg-primary text-primary-content">
+      <div>
+        <p>Copyright © 2026</p>
+        <p>Current Time: <span id="live-datetime">Loading...</span></p>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
